@@ -5,6 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title data-tr="PUZZMACA: Kelimelerle Başyapıt" data-en="PUZZMACA: Masterpieces from Words">PUZZMACA: Kelimelerle Başyapıt</title>
 <link rel="icon" type="image/png" href="icon.png">
+<meta name="description" content="Harf çarkından kelimeler kur, ünlü tabloları parça parça ortaya çıkar. / Build words from the wheel and reveal famous paintings piece by piece.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="PUZZMACA: Kelimelerle Başyapıt">
+<meta property="og:description" content="Harf çarkından kelimeler kur, ünlü tabloları parça parça ortaya çıkar. / Build words and reveal famous paintings.">
+<meta property="og:image" content="https://habuco.github.io/puzzmaca-privacy/icon.png">
+<meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="web.css">
 <script src="lang.js"></script>
 </head>
@@ -24,6 +30,17 @@
     <h1>Masterpieces from words</h1>
     <p>PUZZMACA is a word and art game developed by Harun Burak Çoban under the HegionSoft brand. Build words from the letter wheel and fill the crossword; every word you find drops tiny pieces of a famous painting into place until the masterpiece is revealed.</p>
   </div>
+  <div class="stores">
+    <a href="https://apps.apple.com/app/id6820074871" data-store="ios">App Store</a>
+    <a href="https://play.google.com/store/apps/details?id=com.hegionsoft.puzzmaca" data-store="android">Google Play</a>
+  </div>
+  <script>
+    /* Paylaşılan bağlantıya telefondan dokunan oyuncu doğrudan kendi mağazasına gider; masaüstünde iki düğme görünür */
+    (function () {
+      var ua = navigator.userAgent || "", a = document.querySelector('.stores a[data-store="' + (/iPhone|iPad|iPod/i.test(ua) ? "ios" : /Android/i.test(ua) ? "android" : "none") + '"]');
+      if (a) setTimeout(function () { location.replace(a.href); }, 600);
+    })();
+  </script>
   <div class="cards">
     <a href="privacy.html"><b data-tr="Gizlilik Politikası" data-en="Privacy Policy">Gizlilik Politikası</b><span data-tr="Hangi verileri neden işlediğimiz" data-en="What data we process and why">Hangi verileri neden işlediğimiz</span></a>
     <a href="delete-account.html"><b data-tr="Hesabını Silme" data-en="Delete Your Account">Hesabını Silme</b><span data-tr="Hesabını ve verilerini kalıcı olarak sil" data-en="Permanently delete your account and data">Hesabını ve verilerini kalıcı olarak sil</span></a>
